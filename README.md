@@ -15,4 +15,4 @@ other classes in order to structure tasks in a neat and organized fashion. Multi
 
 This project is deployed on GitHub Pages:
 
-- https://github.com/Ultra-Coder5927/se_project_todo-app
+- https://ultra-coder5927.github.io/se_project_todo-app/
