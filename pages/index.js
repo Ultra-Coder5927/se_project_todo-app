@@ -33,7 +33,7 @@ const generateTodo = (data) => {
 
 function renderTodo(todoData) {
   const todoElement = generateTodo(todoData);
-  todosList.append(todoElement);
+  todoSection.addItem(todoElement);
 }
 
 const handleAddTodoSubmit = (inputValues) => {

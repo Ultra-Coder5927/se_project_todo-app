@@ -6,10 +6,12 @@ export default class Popup {
 
   open() {
     this._popup.classList.add("popup_visible");
+    this._popup.addEventListener("click", this._handleClickOutside);
   }
 
   close() {
     this._popup.classList.remove("popup_visible");
+    this._popup.removeEventListener("click", this._handleClickOutside);
   }
 
   _handleEscapeClose = (event) => {
@@ -28,8 +30,6 @@ export default class Popup {
     this._closeButton.addEventListener("click", () => {
       this.close();
     });
-
-    this._popup.addEventListener("click", this._handleClickOutside);
 
     document.addEventListener("keydown", this._handleEscapeClose);
   }
